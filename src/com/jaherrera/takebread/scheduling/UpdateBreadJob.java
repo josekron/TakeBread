@@ -22,7 +22,7 @@ public class UpdateBreadJob implements Serializable{
 	@Inject
 	UserService userService;
 	
-	@Schedule(dayOfWeek = "*", hour = "9", minute = "01", second = "10")
+	@Schedule(dayOfWeek = "*", hour = "11", minute = "01", second = "10")
 	public void doExecute()
 	{  
 		LOGGER.info("[UpdateBreadJob - execute] - init");
