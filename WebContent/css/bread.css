@@ -1,0 +1,75 @@
+@font-face {
+	font-family: RobotoBlack;
+    src: url("fonts/Roboto-Black.ttf");
+    }
+
+@font-face {
+	font-family: RobotoBC;
+    src: url("fonts/Roboto-BoldCondensed.ttf");
+    }
+    
+@font-face {
+	font-family: RobotoRegular;
+    src: url("fonts/Roboto-Regular.ttf");
+    }
+    
+#style_header_day {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-variant: small-caps;
+    font-size: 28px;
+}
+
+#style_header_resume {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+#style_radio_buttons {
+    margin-bottom:15px;
+}
+
+#style_section_send {
+    margin-left:25px;
+    margin-right:25px;
+    background-color: #d35400;
+}
+
+#style_button_send {
+    background-color: #d35400;
+    height:50px;
+}
+
+#style_user_code {
+    text-align: center;
+    width:80px;
+    font-size: 28px;
+}
+
+#frame_login {
+	background-color: ghostwhite;
+	padding: 15px;
+	margin-top: 15%;
+}
+
+#transit {
+	cursor: pointer;
+}
+
+.toolbardemoScrollShrink .face {
+  width: 48px;
+  margin: 16px;
+  border-radius: 48px;
+  border: 1px solid #ddd; 
+}
+
+.dividerdemoBasicUsage .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; }
+  
+ .selectdemoBasicUsage md-input-container {
+  margin-right: 10px; }
+  

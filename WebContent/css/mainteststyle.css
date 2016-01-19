@@ -1,0 +1,26 @@
+#tableAtributes{
+	width:35%;
+	float:left;
+
+}
+
+#tableResultFB{
+	float:left;
+	width: 50%;
+}
+
+#resultTestFB{
+	float:right;
+	padding-right:50%;
+	border-style: hidden;
+}
+
+#noborders{
+	border-style: hidden;
+}
+
+#facebookparam{
+	float:left;
+	width: 50%;
+}
+
