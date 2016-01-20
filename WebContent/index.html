@@ -42,7 +42,7 @@
     	 </md-radio-group>
     	 <md-input-container layout-align="center center">
             <label>User Code</label>
-            <input data-ng-model="user.userCode" id="style_user_code">
+            <input data-ng-model="user.userCode" id="style_user_code" required data-ng-pattern="/^[0-9]{4}$/">
           </md-input-container>
     </md-content>
     <md-content>
