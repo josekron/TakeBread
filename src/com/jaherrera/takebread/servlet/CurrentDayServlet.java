@@ -22,7 +22,7 @@ public class CurrentDayServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	
-	private static Integer HOUR_UPDATE = 9;
+	private static Integer HOUR_UPDATE = 11;
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(CurrentDayServlet.class.getName());
        
@@ -31,7 +31,6 @@ public class CurrentDayServlet extends HttpServlet {
      */
     public CurrentDayServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -68,6 +67,7 @@ public class CurrentDayServlet extends HttpServlet {
 		    response.setCharacterEncoding("UTF-8");
 		    response.getWriter().write(json);
 		    
+			LOGGER.info("[CurrentDayServlet - doService] - Result string: {}", res);
 			return;
 			
 		}finally{
