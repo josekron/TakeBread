@@ -6,7 +6,7 @@ Do you have breakfast in the office? you buy bread with your office mates and fr
 
 You are responsible of taking bread out of the freezer every morning and some days you don´t know if all office mates have breakfast in the office because they didn´t say nothing yesterday.
 
-This App help you with this task. Each can notify if want bread and the App will count the total number of bread (normal and wholemeal) to defrost and will show it. Every morning, with a scheduler, the App reset the counter for the next day.
+This App help you with this task. Each mate can notify if want bread and the App will count the total number of bread (normal and wholemeal) to defrost and will show it. Every morning, with a scheduler, the App reset the counter for the next day.
 
 Each user has a security code which is required for notify if want bread.
 
