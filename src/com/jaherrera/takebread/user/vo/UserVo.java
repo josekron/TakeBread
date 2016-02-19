@@ -2,8 +2,6 @@ package com.jaherrera.takebread.user.vo;
 
 import java.io.Serializable;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.mongodb.morphia.annotations.Embedded;
@@ -12,7 +10,6 @@ import org.mongodb.morphia.annotations.Id;
 
 @Entity(value="users", noClassnameStored = true)
 @XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
 public class UserVo implements Serializable{
 
 	private static final long serialVersionUID = 689649549545351051L;

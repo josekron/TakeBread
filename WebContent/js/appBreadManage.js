@@ -21,7 +21,7 @@ app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast
 			});
 			ngNotify.set("Please, fill all fields.");
 		}else{
-			var json = angular.toJson({userVo:user});
+			var json = angular.toJson(user);
 			$http({
 			    method: 'POST',
 			    url: x + '/TakeBread/user/bread',
