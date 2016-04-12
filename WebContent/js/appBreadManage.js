@@ -1,8 +1,8 @@
 app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast, $document, ngNotify) {
 
 	var x = location.origin;
-	$scope.currentDay = "Monday, 11 January";
-	$scope.breadResume = "3 normal bread and 1 wholemeal bread"
+	$scope.currentDay = "";//"Monday, 11 January";
+	$scope.breadResume = "";//"3 normal bread and 1 wholemeal bread"
 	$scope.user = {isBread:true, breadType:"NORMAL", userCode: ""}
 	
 	updateCurrentDay();
@@ -23,8 +23,8 @@ app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast
 		}else{
 			var json = angular.toJson(user);
 			$http({
-			    method: 'POST',
-			    url: x + '/TakeBread/user/bread',
+			    method: 'PUT',
+			    url: x + '/TakeBread/user/',
 			    data: json
 			})
 			.success (function(data) {
@@ -57,7 +57,7 @@ app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast
 					message = "Fields incorrects.";
 				if(status == 401 || status == 404)
 					message = "User not found with this userCode";
-				if(status == 500)
+				if(status == 422)
 					message = "Opss! Something has been failed.";
 					
 				ngNotify.set(message);
@@ -89,7 +89,7 @@ app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast
 					message = "Fields incorrects.";
 				if(status == 401 || status == 404)
 					message = "User not found with this userCode";
-				if(status == 500)
+				if(status == 422)
 					message = "Opss! Something has been failed.";
 					
 				ngNotify.set(message);
@@ -120,7 +120,7 @@ app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast
 					message = "Fields incorrects.";
 				if(status == 401 || status == 404)
 					message = "User not found with this userCode";
-				if(status == 500)
+				if(status == 422)
 					message = "Opss! Something has been failed.";
 					
 				ngNotify.set(message);

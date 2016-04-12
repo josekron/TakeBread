@@ -4,6 +4,7 @@ import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -23,6 +24,8 @@ public class UserWs {
 
 	/** The Constant log. */
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserWs.class.getName());
+	
+	private static final Integer ERROR_NOT_PROCESS = 422;
 	
 	@Inject
 	UserService userService;
@@ -48,7 +51,7 @@ public class UserWs {
 			
 		}catch(Exception ex){
 			LOGGER.error("[UserWs - loadResume] - Error: "+ex);
-			return Response.serverError().status(Status.INTERNAL_SERVER_ERROR).build();
+			return Response.serverError().status(ERROR_NOT_PROCESS).build();
 			
 		}finally{
 			LOGGER.info("[UserWs - loadResume] - Finish Timing:"+(System.currentTimeMillis()-currentSystemTime));
@@ -56,7 +59,7 @@ public class UserWs {
 	}
 	
 	@POST
-	@Path("/create")
+	@Path("/")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response createUser(UserVo userVo){
@@ -77,15 +80,15 @@ public class UserWs {
 			
 		}catch (Exception ex) {
 			LOGGER.error("[UserWs - createUser] - Error: "+ex);
-			return Response.serverError().status(Status.INTERNAL_SERVER_ERROR).build();
+			return Response.serverError().status(ERROR_NOT_PROCESS).build();
 			
 		}finally{
 			LOGGER.info("[UserWs - createUser] - Finish Timing:"+(System.currentTimeMillis()-currentSystemTime));
 		}
 	}
 	
-	@POST
-	@Path("/bread")
+	@PUT
+	@Path("/")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response updateBread(UserVo userVo){
@@ -114,7 +117,7 @@ public class UserWs {
 			
 		}catch (Exception ex) {
 			LOGGER.error("[UserWs - updateBread] - Error: "+ex);
-			return Response.serverError().status(Status.INTERNAL_SERVER_ERROR).build();
+			return Response.serverError().status(ERROR_NOT_PROCESS).build();
 			
 		}finally{
 			LOGGER.info("[UserWs - updateBread] - Finish Timing:"+(System.currentTimeMillis()-currentSystemTime));
