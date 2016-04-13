@@ -24,7 +24,7 @@ For the frontend, I use AngularJs with the modules ngMaterial (material style) a
 
 3. Insert in MongoDb each user with this POST call:
 
-http://server:port/TakeBread/user/create
+http://server:port/TakeBread/user/
 
 4. Access from your web browser:
 
