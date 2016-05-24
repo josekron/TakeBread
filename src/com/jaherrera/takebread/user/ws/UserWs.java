@@ -25,8 +25,6 @@ public class UserWs {
 	/** The Constant log. */
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserWs.class.getName());
 	
-	private static final Integer ERROR_NOT_PROCESS = 422;
-	
 	@Inject
 	UserService userService;
 	
@@ -51,7 +49,7 @@ public class UserWs {
 			
 		}catch(Exception ex){
 			LOGGER.error("[UserWs - loadResume] - Error: "+ex);
-			return Response.serverError().status(ERROR_NOT_PROCESS).build();
+			return Response.serverError().status(Status.INTERNAL_SERVER_ERROR).build();
 			
 		}finally{
 			LOGGER.info("[UserWs - loadResume] - Finish Timing:"+(System.currentTimeMillis()-currentSystemTime));
@@ -80,7 +78,7 @@ public class UserWs {
 			
 		}catch (Exception ex) {
 			LOGGER.error("[UserWs - createUser] - Error: "+ex);
-			return Response.serverError().status(ERROR_NOT_PROCESS).build();
+			return Response.serverError().status(Status.INTERNAL_SERVER_ERROR).build();
 			
 		}finally{
 			LOGGER.info("[UserWs - createUser] - Finish Timing:"+(System.currentTimeMillis()-currentSystemTime));
@@ -117,7 +115,7 @@ public class UserWs {
 			
 		}catch (Exception ex) {
 			LOGGER.error("[UserWs - updateBread] - Error: "+ex);
-			return Response.serverError().status(ERROR_NOT_PROCESS).build();
+			return Response.serverError().status(Status.INTERNAL_SERVER_ERROR).build();
 			
 		}finally{
 			LOGGER.info("[UserWs - updateBread] - Finish Timing:"+(System.currentTimeMillis()-currentSystemTime));

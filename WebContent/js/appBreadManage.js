@@ -57,7 +57,7 @@ app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast
 					message = "Fields incorrects.";
 				if(status == 401 || status == 404)
 					message = "User not found with this userCode";
-				if(status == 422)
+				if(status == 500)
 					message = "Opss! Something has been failed.";
 					
 				ngNotify.set(message);
@@ -89,7 +89,7 @@ app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast
 					message = "Fields incorrects.";
 				if(status == 401 || status == 404)
 					message = "User not found with this userCode";
-				if(status == 422)
+				if(status == 500)
 					message = "Opss! Something has been failed.";
 					
 				ngNotify.set(message);
@@ -120,7 +120,7 @@ app.controller("CtrlBread", function($scope, $http, $location, $window, $mdToast
 					message = "Fields incorrects.";
 				if(status == 401 || status == 404)
 					message = "User not found with this userCode";
-				if(status == 422)
+				if(status == 500)
 					message = "Opss! Something has been failed.";
 					
 				ngNotify.set(message);
