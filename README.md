@@ -10,12 +10,12 @@ This App help you with this task. Each mate can notify if want bread and the App
 
 Each user has a security code which is required for notify if want bread.
 
-Screen of client app: http://imgur.com/LihkBxn
-
 #Technologies.
 The backend is implemented with JavaEE using Webservices, Servlet, Scheduler, Log4j and MongoDb database.
 
 For the frontend, I use AngularJs with the modules ngMaterial (material style) and ngNotify (for manage the messages of webservices).
+
+For testing the REST API, I use REST-Assured: https://github.com/rest-assured/rest-assured
 
 #Steps.
 1. Generate a .war and put it in your application server. Copy the "opt" folder in your "opt" folder of your server.
@@ -31,3 +31,7 @@ http://server:port/TakeBread/user/
 http://server:port/TakeBread
 
 5. Select the bread and put your security code.
+
+#Screen
+
+![alt tag](https://github.com/josekron/TakeBread/blob/master/screenshot_takebread.png)
