@@ -13,7 +13,7 @@ Each user has a security code which is required for notify if want bread.
 #Technologies.
 The backend is implemented with JavaEE using Webservices, Servlet, Scheduler, Log4j and MongoDb database.
 
-For the frontend, I use AngularJs with the modules ngMaterial (material style) and ngNotify (for manage the messages of webservices).
+For the frontend, I use AngularJs with the modules ngMaterial (material style) and ngNotify (for manage the response of webservices).
 
 For testing the REST API, I use REST-Assured: https://github.com/rest-assured/rest-assured
 
