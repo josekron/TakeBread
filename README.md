@@ -1,7 +1,7 @@
-# Take Bread
+# Take Bread.
 Notify your office mates that you want bread
 
-# Description
+# Description.
 Do you have breakfast in the office? you buy bread with your office mates and freeze it, right?
 
 You are responsible of taking bread out of the freezer every morning and some days you don´t know if all office mates have breakfast in the office because they didn´t say nothing yesterday.
@@ -11,11 +11,11 @@ This App help you with this task. Each mate can notify if want bread and the App
 Each user has a security code which is required for notify if want bread.
 
 #Technologies.
-The backend is implemented with JavaEE using Webservices, Servlet, Scheduler, Log4j and MongoDb database.
+The back-end is implemented with JavaEE using Webservices, Servlet, Scheduler, Log4j and MongoDb database.
 
-For the frontend, I use AngularJs with the modules ngMaterial (material style) and ngNotify (for manage the response of webservices).
+About the front-end, I use AngularJs with the modules ngMaterial (material style) and ngNotify (for manage the response of webservices).
 
-For testing the REST API, I use REST-Assured: https://github.com/rest-assured/rest-assured
+About testing the REST API, I use REST-Assured: https://github.com/rest-assured/rest-assured
 
 #Steps.
 1. Generate a .war and put it in your application server. Copy the "opt" folder in your "opt" folder of your server.
@@ -32,6 +32,6 @@ http://server:port/TakeBread
 
 5. Select the bread and put your security code.
 
-#Screen
+#Screens.
 
 ![alt tag](https://github.com/josekron/TakeBread/blob/master/screenshot_takebread.png)
